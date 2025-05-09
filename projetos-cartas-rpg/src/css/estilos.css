@@ -1,0 +1,128 @@
+body{
+    font-family: 'Poppins', Times, serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #e2e1a1;
+    color: #370032;
+}
+
+body.modo-escuro{
+    background-color: #100a22;
+    color: #e2bd80;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+main{
+    padding: 25px;
+}
+
+.lista-cartas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-classes{
+    background-color: #e2bd80;
+    width: 200px;
+	padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-classes:hover{
+   
+}
+
+.modo-escuro .cartao-classes{
+    background-color: #330529;
+}
+
+main .cartao-classes .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #250707;
+    border-radius: 10px;
+}
+
+main .cartao-classes .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+main .cartao-classes .gif{
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-classes .tipos{
+    display: flex;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+main .cartao-classes .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.dano{
+    background-color: #894242 ;
+}
+
+.magia{
+    background-color: #725a7a;
+}
+
+.suporte{
+    background-color: #688e4e;
+}
+
+.tank{
+    background-color: #406d96;
+}
+
+.distancia{
+    background-color: #d28a7c;
+}
+
+.guerreiro{
+    background-color: gray;
+}
+
+.furtivo{
+    background-color: #e7e9ee;
+}
+
+main .descricao{
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 12px;
+    padding-right: 10px;
+}
